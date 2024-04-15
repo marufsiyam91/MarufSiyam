@@ -14,11 +14,11 @@ export default {
     },
 
     screens: {
-      'sm': '640px',
+      'sm': '600px',
 
       'md': '768px',
 
-      'lg': '992px',
+      'lg': '998px',
 
       'xl': '1024px',
 

@@ -3,12 +3,12 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-around items-center h-20 px-20">
+    <nav className="flex justify-between lg:justify-around items-center h-20 sm:px-10 lg:px-20">
         <div className="">
             <h2 className='text-slate-800 font-urbanist text-4xl font-semibold'>Maruf</h2>
         </div>
 
-        <ul className="hidden relative md:flex items-center px-12 rounded-t-[-2xl] rounded-b-[50px] gap-10 bg-[#070707] h-full">
+        <ul className="hidden relative lg:flex items-center px-12 rounded-t-[-2xl] rounded-b-[50px] gap-10 bg-[#070707] h-full">
             <li className="list-none font-urbanist text-white"><a href="">Home</a></li>
             <li className="list-none font-urbanist text-white"><a href="">About</a></li>
             <li className="list-none font-urbanist text-white"><a href="">Skills</a></li>
