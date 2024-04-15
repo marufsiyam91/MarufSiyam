@@ -9,7 +9,8 @@ export default {
 
     fontFamily: {
       primary: ['Hanken Grotesk', 'sans-serif'],
-      urbanist: ['Urbanist', 'sans-serif']
+      urbanist: ['Urbanist', 'sans-serif'],
+      cursive: [ 'Seaweed Script', 'cursive']
     },
 
     screens: {
