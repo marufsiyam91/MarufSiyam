@@ -1,9 +1,23 @@
+import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { IoMdMenu } from "react-icons/io";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+
+
+
 
 
 const Navbar = () => {
+
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const mobileMenu = showNavbar ? 'lg:hidden w-full esm:w-[320px] h-[100vh] top-0 right-0 flex flex-col justify-evenly py-10 fixed bg-slate-100 dutation-300' : 'lg:hidden w-[320px] h-[100vh] top-0 right-[-100%] flex flex-col justify-evenly py-10 fixed bg-slate-100 dutation-300'
+  const closeBtn = showNavbar ? 'fixed top-8 right-4' : 'right-[-100%]'
+
+
+
   return (
-    <nav className="flex justify-between lg:justify-around items-center h-20 sm:px-10 lg:px-20">
+    <nav className="relative z-40 flex justify-between lg:justify-around items-center h-20 px-8 lg:px-20">
         <div className="">
             <h2 className='text-slate-800 font-urbanist text-4xl font-semibold'>Maruf</h2>
         </div>
@@ -18,8 +32,35 @@ const Navbar = () => {
         </ul>
 
 
-        <div className="">
+        <div className="hidden lg:block">
             <button className="font-urbanist font-medium py-2 px-4 border border-[#070707] rounded-md flex items-center gap-2 hover:text-orange-500 duration-300">Contact Me <BsArrowRight /></button>
+        </div>
+
+        <div className="block lg:hidden">
+          <span className="text-2xl" onClick={() => setShowNavbar(true)}><IoMdMenu /></span>
+        </div>
+
+        <div className={mobileMenu}>
+          <div className={closeBtn}>
+              <span className="text-2xl" onClick={() => setShowNavbar(false)}><AiOutlineCloseCircle /></span>
+          </div>
+          <div>
+          <h2 className='text-slate-800 font-urbanist text-3xl font-semibold px-4'>Maruf</h2>
+          </div>
+          <ul className="flex flex-col p-2 gap-4">
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">Home</a></li>
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">About</a></li>
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">Skills</a></li>
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">Portfolio</a></li>
+          </ul>
+
+          <div className="px-4">
+            <h3 className="font-urbanist text-2xl mb-4">Contact</h3>
+            <p className="font-urbanist mt-2">Abdullahpur, keranigonj</p>
+            <p className="font-urbanist mt-2">Dhaka - 1311</p>
+            <p className="font-urbanist mt-2">marufsiyam9123@gmail.com</p>
+            <p className="font-urbanist mt-2">+880 126096711</p>
+          </div>
         </div>
     </nav>
   )
