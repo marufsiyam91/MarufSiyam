@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {},
 
+
     fontFamily: {
       primary: ['Hanken Grotesk', 'sans-serif'],
       urbanist: ['Urbanist', 'sans-serif'],
