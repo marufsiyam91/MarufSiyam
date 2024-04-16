@@ -26,6 +26,8 @@ export default {
       'xl': '1024px',
 
       '2xl': '1280px',
+
+      '4xl': '1444px'
     }
   },
   plugins: [],

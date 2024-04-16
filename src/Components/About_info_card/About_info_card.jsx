@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 
 const About_info_card = () => {
   return (
-    <div className="w-full h-[320px] esm:h-[500px] bg-[#000000] p-4 esm:p-10 2xl:p-16 rounded-xl flex flex-col justify-between">
+    <div className="w-full h-[320px] esm:[400px] sm:h-[500px] bg-[#000000] p-4 esm:p-10 2xl:p-16 rounded-xl flex flex-col justify-between">
         <About_info title={'Name'} info={'Md. Maruf Hossain Siyam'}/>
         <About_info title={'Email'} info={'marufsiyam9123@gmail.com'}/>
         <About_info title={'Phone'} info={'+880 1826096711'}/>
