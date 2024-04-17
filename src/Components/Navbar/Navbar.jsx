@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="relative z-40 flex justify-between lg:justify-around items-center h-20 px-8 lg:px-20">
+    <nav className="max-w-screen-4xl relative z-40 flex justify-between lg:justify-around items-center h-20 w-full px-8  mx-auto ">
         <div className="">
             <h2 className='text-slate-800 font-urbanist text-4xl font-semibold'>Maruf</h2>
         </div>

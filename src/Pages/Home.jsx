@@ -9,7 +9,7 @@ const Home = () => {
             <Navbar/>
 
             <div className="mx-auto py-4 w-full h-[40vh] sm:h-[calc(80vh-80px)] lg:h-[calc(100vh-80px)] relative justify-center flex flex-col">
-              <h2 className="mt-16 font-primary font-bold text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] 2xl:text-[10rem] text-center leading-4 sm:leading-10">HI THERE I'M</h2>
+              <h2 className="mt-10 sm:mt-16 font-primary font-bold text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] 2xl:text-[10rem] text-center leading-4 sm:leading-10">HI THERE I'M</h2>
               <h2 className="font-primary font-bold text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] 2xl:text-[10rem] text-center mt-4">MAR<span id="text_stroke" className="relative z-10 text-transparent .text-stroke-black">UF SI</span>YAM</h2>
 
               <div className="flex justify-center relative z-10 gap-4 sm:gap-[100px] mt-8">
