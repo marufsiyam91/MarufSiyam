@@ -13,7 +13,7 @@ const About_info_card = () => {
         <About_info title={'Name'} info={'Md. Maruf Hossain Siyam'}/>
         <About_info title={'Email'} info={'marufsiyam9123@gmail.com'}/>
         <About_info title={'Phone'} info={'+880 1826096711'}/>
-        <About_info title={'Address'} info={'Keranigonj, Dhaka'}/>
+        <About_info title={'Address'} info={'Keraniganj, Dhaka'}/>
         <div className="flex items-center justify-between">
             <p className="text-white font-urbanist text-lg esm:text-xl lg:text-2xl">Follow Me</p>
 

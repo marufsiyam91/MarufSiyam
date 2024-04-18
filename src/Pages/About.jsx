@@ -5,7 +5,7 @@ import SectionBtn from './../Components/SectionBtn';
 
 const About = () => {
   return (
-    <div className="max-w-screen-4xl mx-auto h-full flex flex-col items-center py-20 px-4 esm:px-8 lg:px-10">
+    <div id="about" className="max-w-screen-4xl mx-auto h-full flex flex-col items-center py-20 px-4 esm:px-8 lg:px-10">
             <SectionBtn>About Me</SectionBtn>
 
             <div className="mt-12 text-center">

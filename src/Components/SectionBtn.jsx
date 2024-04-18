@@ -1,8 +1,9 @@
 
 
 const SectionBtn = ({children}) => {
+  
   return (
-    <button className="text-2xl font-urbanist text-orange-200 border py-4 px-6 rounded-[5rem]">{children}</button>
+    <button className="text-2xl font-urbanist text-orange-500 border py-4 px-6 rounded-[5rem]">{children}</button>
   )
 }
 

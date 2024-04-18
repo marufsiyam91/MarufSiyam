@@ -4,6 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { FaFacebookF, FaDiscord, FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 
@@ -19,45 +20,45 @@ const Navbar = () => {
 
 
   return (
-    <nav className="max-w-screen-4xl relative z-40 flex justify-between lg:justify-around items-center h-20 w-full px-8  mx-auto ">
+    <nav className="max-w-screen-4xl relative z-40 flex justify-between lg:justify-around items-center h-20 w-full px-8  mx-auto">
         <div className="">
             <h2 className='text-slate-800 font-urbanist text-4xl font-semibold'>Maruf</h2>
         </div>
 
         <ul className="hidden relative lg:flex items-center px-12 rounded-t-[-2xl] rounded-b-[50px] gap-10 bg-[#070707] h-full">
-            <li className="list-none font-urbanist text-white"><a href="">Home</a></li>
-            <li className="list-none font-urbanist text-white"><a href="">About</a></li>
-            <li className="list-none font-urbanist text-white"><a href="">Skills</a></li>
-            <li className="list-none font-urbanist text-white"><a href="">Portfolio</a></li>
+            <li className="list-none font-urbanist text-white"><AnchorLink href="#home">Home</AnchorLink></li>
+            <li className="list-none font-urbanist text-white"><AnchorLink href="#about">About</AnchorLink></li>
+            <li className="list-none font-urbanist text-white"><AnchorLink href="#skills">Skills</AnchorLink></li>
+            <li className="list-none font-urbanist text-white"><AnchorLink href="#">Portfolio</AnchorLink></li>
             <div className="w-16 rounded-tl-full border-t-[20px] border-l-[20px] border-[#070707] bg-base h-14 absolute top-[-20px] right-[-44px]"></div>
             <div className="w-16 rounded-tr-full border-t-[20px] border-r-[20px] border-[#070707] bg-base h-14 absolute top-[-20px] left-[-44px]"></div>
         </ul>
 
 
         <div className="hidden lg:block">
-            <button className="font-urbanist font-medium py-2 px-4 border border-[#070707] rounded-md flex items-center gap-2 hover:text-orange-500 duration-300">Contact Me <BsArrowRight /></button>
+            <AnchorLink href="#contact" className="font-urbanist font-medium py-2 px-4 border border-[#070707] rounded-md flex items-center gap-2 hover:text-orange-500 duration-300">Contact Me <BsArrowRight /></AnchorLink>
         </div>
 
         <div className="block lg:hidden">
-          <span className="text-2xl" onClick={() => setShowNavbar(true)}><IoMdMenu /></span>
+          <span className="text-3xl" onClick={() => setShowNavbar(true)}><IoMdMenu /></span>
         </div>
 
         <div className={mobileMenu}>
           <div className={closeBtn}>
-              <span className="text-2xl" onClick={() => setShowNavbar(false)}><AiOutlineCloseCircle /></span>
+              <span className="text-3xl" onClick={() => setShowNavbar(false)}><AiOutlineCloseCircle /></span>
           </div>
           <div>
           <h2 className='text-slate-800 font-urbanist text-3xl font-semibold px-4'>Maruf</h2>
           </div>
           <ul className="flex flex-col p-2 gap-2">
-            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">Home</a></li>
-            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">About</a></li>
-            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">Skills</a></li>
-            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><a href="">Portfolio</a></li>
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><AnchorLink href="#home">Home</AnchorLink></li>
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><AnchorLink href="#about">About</AnchorLink></li>
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><AnchorLink href="#skills">Skills</AnchorLink></li>
+            <li className="list-none font-urbanist font-semibold text-black py-2 px-4 hover:bg-orange-50 duration-300 rounded-md"><AnchorLink href="#portfolio">Portfolio</AnchorLink></li>
           </ul>
 
           <div className="px-4">
-            <h3 className="font-urbanist text-2xl mb-4">Contact</h3>
+            <AnchorLink href="#contact" className="font-urbanist text-2xl mb-4">Contact</AnchorLink>
             <p className="font-urbanist mt-2">Abdullahpur, keranigonj</p>
             <p className="font-urbanist mt-2">Dhaka - 1311</p>
             <p className="font-urbanist mt-2">marufsiyam9123@gmail.com</p>

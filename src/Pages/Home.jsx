@@ -4,7 +4,7 @@ import profile from '../assets/maruf_siyam.png'
 
 const Home = () => {
   return (
-    <div className="p-4 lg:p-6">
+    <div id="home" className="p-4 lg:p-6">
         <div className="h-auto sm:h-[80vh] lg:h-[100vh] bg-[#F8F6DF] rounded-[20px] lg:rounded-[30px] overflow-hidden">
             <Navbar/>
 
