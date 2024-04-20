@@ -3,7 +3,7 @@
 const Contact_form = () => {
   return (
     <div className="w-full xl:w-1/2">
-        <form className="bg-transparent max-w-full flex flex-col gap-2 sm:gap-4 p-4 sm:p-8 rounded-2xl">
+        <form className="bg-transparent max-w-full flex flex-col gap-2 sm:gap-4 rounded-2xl">
             <div className="flex gap-2 sm:gap-4 flex-col xl:flex-row">
                 <input className="xl:w-1/2 w-full p-4 border rounded-xl bg-white" type="text" name="name" placeholder="Enter Name"/>
                 <input className="xl:w-1/2 w-full p-4 border rounded-xl" type="email" name="email" placeholder="Enter Email" />
