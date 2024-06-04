@@ -1,5 +1,5 @@
 import { FaFacebookF, FaDiscord, FaLinkedinIn } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FaArrowUpLong } from "react-icons/fa6";
 
@@ -10,17 +10,17 @@ const Footer = () => {
         <h2 className="text-slate-50 text-md lg:text-xl text-center">@2024 - All Rights Reserved Maruf Siyam</h2>
       </div>
       <div className="flex gap-3 lg:gap-4">
-        <div className="text-white w-8 h-8 text-md bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
+        <div className="text-white w-8 lg:w-10 h-8 lg:h-10 text-md lg:text-lg bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
           <FaFacebookF />
         </div>
-        <div className="text-white w-8 h-8 text-md bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
+        <div className="text-white w-8 lg:w-10 h-8 lg:h-10 text-md lg:text-lg bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
           <FaLinkedinIn />
         </div>
-        <div className="text-white w-8 h-8 text-md bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
+        <div className="text-white w-8 lg:w-10 h-8 lg:h-10 text-md lg:text-lg bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
           <FaDiscord />
         </div>
-        <div className="text-white w-8 h-8 text-md bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
-          <FaGithub />
+        <div className="text-white w-8 lg:w-10 h-8 lg:h-10 text-md lg:text-lg bg-slate-600 flex items-center justify-center rounded-full hover:bg-orange-100 hover:text-stone-900 duration-300">
+        <BsGithub />
         </div>
       </div>
 

@@ -8,7 +8,7 @@ const Home = () => {
         <div className="h-auto sm:h-[80vh] lg:h-[100vh] bg-[#F8F6DF] rounded-[20px] lg:rounded-[30px] overflow-hidden">
             <Navbar/>
 
-            <div className="mx-auto py-4 w-full h-[40vh] sm:h-[calc(80vh-80px)] lg:h-[calc(100vh-80px)] relative justify-center flex flex-col">
+            <div className="mx-auto py-4 max-w-screen-4xl h-[40vh] sm:h-[calc(80vh-80px)] lg:h-[calc(100vh-80px)] relative justify-center flex flex-col">
               <h2 className="mt-10 sm:mt-16 font-primary font-bold text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] 2xl:text-[10rem] text-center leading-4 sm:leading-10">HI THERE I'M</h2>
               <h2 className="font-primary font-bold text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] 2xl:text-[10rem] text-center mt-4">MAR<span id="text_stroke" className="relative z-10 text-transparent .text-stroke-black">UF SI</span>YAM</h2>
 

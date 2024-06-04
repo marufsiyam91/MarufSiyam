@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import Skills from './Pages/Skills';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer/Footer';
+import Portfolio from './Pages/Portfolio';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Portfolio/>
       <Contact />
       <Footer/>
     </div>
