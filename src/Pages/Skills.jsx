@@ -17,7 +17,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 
 const Skills = () => {
   return (
-    <div id="skills" className="max-w-screen-4xl mx-auto h-full flex flex-col items-center py-10 px-4 esm:px-8 sm:px-10 lg:px-20">
+    <div id="skills" className="max-w-screen-4xl mx-auto h-full flex flex-col items-center py-20 px-4 esm:px-8 sm:px-10 lg:px-20">
         <SectionBtn>My Skills</SectionBtn>
         <h2 className="text-white font-urbanist font-semibold text-xl text-center lg:text-start sm:text-2xl lg:text-3xl mt-12 indent-16 sm:indent-20 md:indent-30 lg:indent-40 leading-10">Elevating User Experiences: A Frontend Developer's Portfolio Spotlight. A Fresh Perspective in Interactive Design and Collaborative Endeavors</h2>
 
