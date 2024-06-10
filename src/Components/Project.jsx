@@ -6,10 +6,16 @@ const Project = ({image, title, liveLink, gitLink}) => {
     // const navigate = useNavigate()
 
   return (
-    <div>
-        <img src={image} alt="" />
-        {/* <button onClick={() => navigate(liveLink)}>Live</button> */}
-        <a href={liveLink}>Live</a>
+    <div className="w-full h-[450px] overflow-hidden relative rounded-xl group">
+          <img className="relative top-0 left-0 w-full h-auto transition-transform duration-1000 ease-in-out transform group-hover:-translate-y-[calc(100%-450px)]" src={image} alt="" />
+          <div className="absolute flex w-full h-[450px] top-0 left-0 bg-orange-400 bg-opacity-60 opacity-0 transition-opacity duration-150 delay-1000 group-hover:flex items-center justify-center gap-4 group-hover:opacity-100">
+            <button className=" hover:scale-[1.1] transition duration-300 bg-slate-50 hover:text-orange-500 text-lg font-semibold px-4 py-2 rounded-xl font-urbanist">
+              <a href={liveLink} target="_blank">Live View</a>
+            </button>
+            <button className=" hover:scale-[1.1] transition duration-300 bg-slate-50 hover:text-orange-500 text-lg font-semibold px-4 py-2 rounded-xl font-urbanist">
+              <a href={gitLink} target="_blank">Client Code</a>
+            </button>
+          </div>
     </div>
   )
 }
