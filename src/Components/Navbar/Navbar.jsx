@@ -14,8 +14,12 @@ const Navbar = () => {
 
   const [showNavbar, setShowNavbar] = useState(false);
 
-  const mobileMenu = showNavbar ? 'lg:hidden w-full esm:w-[320px] h-[100vh] top-0 right-0 flex flex-col justify-evenly py-10 fixed bg-slate-100 dutation-300' : 'lg:hidden w-[320px] h-[100vh] top-0 right-[-200%] flex flex-col justify-evenly py-10 fixed bg-slate-100 dutation-300'
-  const closeBtn = showNavbar ? 'fixed top-8 right-4' : 'right-[-200%]'
+  // const mobileMenu = showNavbar ? 'lg:hidden w-full esm:w-[320px] h-[100vh] top-0 right-0 flex flex-col justify-evenly py-10 fixed bg-slate-100 dutation-300' : 'lg:hidden w-[320px] h-[100vh] top-0 right-[-200%] flex flex-col justify-evenly py-10 fixed bg-slate-100 dutation-300'
+  const mobileMenu = showNavbar 
+  ? 'right-0 w-full esm:w-[320px] h-[100vh] top-0 flex flex-col justify-evenly py-10 fixed bg-slate-100 duration-300 transition-all opacity-100'
+  : 'right-[-200%] w-[320px] h-[100vh] top-0 flex flex-col justify-evenly py-10 fixed bg-slate-100 duration-300 transition-all opacity-0';
+
+  // const closeBtn = showNavbar ? 'fixed top-8 right-4' : 'right-[-200%]'
 
 
 
@@ -29,7 +33,7 @@ const Navbar = () => {
             <li className="list-none font-urbanist text-white"><AnchorLink href="#home">Home</AnchorLink></li>
             <li className="list-none font-urbanist text-white"><AnchorLink href="#about">About</AnchorLink></li>
             <li className="list-none font-urbanist text-white"><AnchorLink href="#skills">Skills</AnchorLink></li>
-            <li className="list-none font-urbanist text-white"><AnchorLink href="#">Portfolio</AnchorLink></li>
+            <li className="list-none font-urbanist text-white"><AnchorLink href="#portfolio">Portfolio</AnchorLink></li>
             <div className="w-16 rounded-tl-full border-t-[20px] border-l-[20px] border-[#070707] bg-base h-14 absolute top-[-20px] right-[-44px]"></div>
             <div className="w-16 rounded-tr-full border-t-[20px] border-r-[20px] border-[#070707] bg-base h-14 absolute top-[-20px] left-[-44px]"></div>
         </ul>
@@ -43,8 +47,12 @@ const Navbar = () => {
           <span className="text-3xl" onClick={() => setShowNavbar(true)}><IoMdMenu /></span>
         </div>
 
+
+<div className="absolute block lg:hidden">
+
         <div className={mobileMenu}>
-          <div className={closeBtn}>
+          {/* <div className={closeBtn}> */}
+          <div className="absolute top-6 right-6">
               <span className="text-3xl" onClick={() => setShowNavbar(false)}><AiOutlineCloseCircle /></span>
           </div>
           <div>
@@ -73,6 +81,7 @@ const Navbar = () => {
           </div>
 
         </div>
+</div>
     </nav>
   )
 }
