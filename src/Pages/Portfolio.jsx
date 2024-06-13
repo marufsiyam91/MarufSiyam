@@ -10,7 +10,7 @@ const Portfolio = () => {
 
 
   return (
-    <div className="py-20 max-w-screen-4xl mx-auto lg:px-6 px-4">
+    <div id="portfolio" className="py-20 max-w-screen-4xl mx-auto lg:px-6 px-4">
       <div className="flex justify-center mb-12">
         <SectionBtn>Portfolio</SectionBtn>
       </div>
